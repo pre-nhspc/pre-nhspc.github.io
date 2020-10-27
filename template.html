@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="has-navbar-fixed-top">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -23,32 +23,32 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
-        #bg {
-          position: fixed; 
-          top: -50%; 
-          left: -50%; 
-          width: 200%; 
-          height: 200%;
-        }
-        #bg img {
-          position: absolute; 
-          top: 0; 
-          left: 0; 
-          right: 0; 
-          bottom: 0; 
-          margin: auto; 
-          min-width: 50%;
-          min-height: 50%;
-          opacity: 0.15;
-        }
+      #bg {
+        position: fixed;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+      }
+      #bg img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        min-width: 50%;
+        min-height: 50%;
+        opacity: 0.15;
+      }
     </style>
   </head>
   <body>
     <div id="bg">
-      <img src="imgs/bg.jpg" alt="">
+      <img src="imgs/bg.jpg" alt="" />
     </div>
     <nav
-      class="navbar is-success"
+      class="navbar is-success is-fixed-top"
       role="navigation"
       aria-label="main navigation"
     >
@@ -78,7 +78,13 @@
             <a class="navbar-link"> 歷屆資訊 </a>
 
             <div class="navbar-dropdown">
-              <a class="navbar-item" target="blank" href="https://pre-nhspc2019.brian.su/"> 108 學年度 </a>
+              <a
+                class="navbar-item"
+                target="blank"
+                href="https://pre-nhspc2019.brian.su/"
+              >
+                108 學年度
+              </a>
             </div>
           </div>
         </div>
@@ -86,7 +92,11 @@
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
-              <a class="button is-primary" target="blank" href="https://forms.gle/BkcuTUGFn2JQ71mq6">
+              <a
+                class="button is-primary"
+                target="blank"
+                href="https://forms.gle/BkcuTUGFn2JQ71mq6"
+              >
                 <strong>立刻報名</strong>
               </a>
             </div>
