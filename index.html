@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:url" content="nhspc.cc/2020">
-    <meta property="og:title" content="109 學年度 全國資訊學科能力競賽模擬賽">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://nhspc.cc/2020/imgs/og.png">
-    <meta property="og:description" content="2020 12/12 | 高中以下學生皆可報名 | 109 學年度 全國資訊學科能力競賽模擬賽">
+    <meta property="og:url" content="nhspc.cc/2020" />
+    <meta property="og:title" content="109 學年度 全國資訊學科能力競賽模擬賽" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://nhspc.cc/2020/imgs/og.png" />
+    <meta
+      property="og:description"
+      content="2020 12/12 | 高中以下學生皆可報名 | 109 學年度 全國資訊學科能力競賽模擬賽"
+    />
     <title>109 學年度 全國資訊學科能力競賽模擬賽</title>
     <meta name="description" content="109 學年度 全國資訊學科能力競賽模擬賽" />
     <link
@@ -78,7 +81,7 @@
 
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item" href="index.html#info"> 競賽資訊 </a>
+          <a class="navbar-item scroll" href="#info"> 競賽資訊 </a>
           <a class="navbar-item" href="news.html"> 最新消息 </a>
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link"> 歷屆資訊 </a>
@@ -116,7 +119,14 @@
         <div class="container">
           <h2 class="subtitle">109 學年度普通型高級中等學校</h2>
           <h1 class="title is-1">資訊學科能力競賽決賽 模擬賽</h1>
-          <h2 class="subtitle"><img id="calendar-icon" src="./imgs/calendar-from-flaticon.svg" style="height: 17px">  12/12（六）</h2>
+          <h2 class="subtitle">
+            <img
+              id="calendar-icon"
+              src="./imgs/calendar-from-flaticon.svg"
+              style="height: 17px"
+            />
+            12/12（六）
+          </h2>
         </div>
       </div>
     </section>
@@ -180,9 +190,7 @@
             <li>評測系統：CMS (Contest Management System) Version 1.4</li>
             <li>允許使用的語言是 C11、C++ 14 以及 Java。</li>
             <li>Server 作業系統：Linux</li>
-            <li>
-              編譯器版本：TBA
-            </li>
+            <li>編譯器版本：TBA</li>
             <li>
               以 Java 程式語言撰寫程式者，請務必將 public class
               以該題英文題目名稱命名。若使用其他 class
@@ -197,7 +205,9 @@
         <div class="content">
           <ul>
             <li>負責人：陳冠辰, 蘇柏瑄</li>
-            <li>出題組：蔡旻諺, 黃克崴, 陳威翰, 郭軒語, 鄭忠宜, 林煜翔, 王均倍</li>
+            <li>
+              出題組：蔡旻諺, 黃克崴, 陳威翰, 郭軒語, 鄭忠宜, 林煜翔, 王均倍
+            </li>
             <li>驗題組：楊承澔, 吳邦寧, 范釗維, 崔浩堂</li>
             <li>測題組：高程昱, 覃毅翔</li>
             <li>系統組：林宇翔, 陳冠霖, 蕭于傑</li>
@@ -227,6 +237,14 @@
           // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
           $(".navbar-burger").toggleClass("is-active");
           $(".navbar-menu").toggleClass("is-active");
+        });
+        $(".scroll").click(function (event) {
+          event.preventDefault();
+          console.log("scroll");
+          $("html, body").animate(
+            { scrollTop: $($(this).attr("href")).offset().top },
+            500
+          );
         });
       });
     </script>
