@@ -240,7 +240,8 @@
         });
         $(".scroll").click(function (event) {
           event.preventDefault();
-          console.log("scroll");
+          $(".navbar-burger").removeClass("is-active");
+          $(".navbar-menu").removeClass("is-active");
           $("html, body").animate(
             { scrollTop: $($(this).attr("href")).offset().top },
             500
