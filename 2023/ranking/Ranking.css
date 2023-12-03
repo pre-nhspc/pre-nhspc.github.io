@@ -1144,6 +1144,13 @@ abbr {
     display: block;
 }
 
+#ConnectionStatus_box[data-status="archived"] #ConnectionStatus_label,
+#ConnectionStatus_box[data-status="archived"] #ConnectionStatus_text {
+    background-color: white;
+    color: blue;
+    border-color: blue;
+}
+
 #ConnectionStatus_box[data-status="connected"] #ConnectionStatus_label,
 #ConnectionStatus_box[data-status="connected"] #ConnectionStatus_text {
     background-color: white;
