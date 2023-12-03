@@ -1,0 +1,1 @@
+{"name": "加簽申請", "short_name": "course", "contest": "official", "max_score": 100.0, "extra_headers": ["Subtask 0 (0)", "Subtask 1 (10)", "Subtask 2 (20)", "Subtask 3 (30)", "Subtask 4 (40)"], "order": 3, "score_mode": "max_subtask", "score_precision": 2}
